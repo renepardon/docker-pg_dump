@@ -12,7 +12,7 @@ RUN chmod +x /dump.sh
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
 
-RUN apt-get update \
-    && apt-get install -y cron \
-    && apt-get clean \
+RUN apt update \
+    && apt install -y cron zip \
+    && apt clean \
     && rm -rf /var/lib/apt/lists/* \

@@ -25,6 +25,7 @@ Backups will appear in this volume. Optionally set up cron job schedule (default
 | `PGPORT` | Optional | `5432` | The port for the database |
 | `CRON_SCHEDULE` | Required | 0 1 * * * | The cron schedule at which to run the pg_dump |
 | `DELETE_OLDER_THAN` | Optional | `None` | Optionally, delete files older than `DELETE_OLDER_THAN` minutes. Do not include `+` or `-`. |
+| `SECURE_BACKUP` | Optional | `1` | Create a password protected ZIP archive which contains the DB backup. Use the same password as for the DB |
 
 ## Example docker-compose services
 
